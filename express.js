@@ -1,3 +1,14 @@
+
+   var 
+        gameport        = process.env.PORT || 1982,
+
+        io              = require('socket.io'),
+        express         = require('express'),
+        UUID            = require('node-uuid'),
+
+        verbose         = false,
+        app             = express.createServer();
+
     app.listen( gameport );
 
         //Log something so we know that it succeeded.
